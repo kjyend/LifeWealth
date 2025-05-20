@@ -1,6 +1,6 @@
 package com.example.lifewealth;
 
-import com.example.lifewealth.calculator.CompoundInterestCalculator;
+import com.example.lifewealth.calculator.Calculator;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -12,7 +12,7 @@ class LifeWealthApplicationTests {
     }
 
     @Test
-    void createCompoundInterestCalculator(){
-        CompoundInterestCalculator calculator =new CompoundInterestCalculator();
+    void createCalculator(){
+        Calculator calculator =new Calculator();
     }
 }
