@@ -4,6 +4,8 @@ import com.example.lifewealth.calculator.Calculator;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 @SpringBootTest
 class LifeWealthApplicationTests {
 
@@ -12,7 +14,8 @@ class LifeWealthApplicationTests {
     }
 
     @Test
-    void createCalculator(){
-        Calculator calculator =new Calculator();
+    void calculateCompoundInterest_input_0_return_0(){
+        Calculator calculator = new Calculator();
+        assertEquals(calculator.calculateCompoundInterest(0),0);
     }
 }
