@@ -16,6 +16,7 @@ class LifeWealthApplicationTests {
     @Test
     void calculateCompoundInterest_input_0_return_0(){
         Calculator calculator = new Calculator();
-        assertEquals(calculator.calculateCompoundInterest(0),0);
+        calculator.calculateCompoundInterest(0);
+        assertEquals(calculator.getCompoundResult(),0);
     }
 }
