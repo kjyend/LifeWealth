@@ -12,4 +12,8 @@ public class Calculator {
     public void applyYears(int years) {
 
     }
+
+    public void applyInterestRate(int rate) {
+
+    }
 }
