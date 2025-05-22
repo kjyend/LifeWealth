@@ -27,4 +27,13 @@ class LifeWealthApplicationTests {
         calculator.applyYears(0);
         assertEquals(calculator.getCompoundResult(),0);
     }
+
+    @Test
+    void calculateCompoundInterest_input_principal_0_year_0_interestRate_0_return_0(){
+        Calculator calculator = new Calculator();
+        calculator.calculateCompoundInterest(0);
+        calculator.applyYears(0);
+        calculator.applyInterestRate(0);
+        assertEquals(calculator.getCompoundResult(),0);
+    }
 }
