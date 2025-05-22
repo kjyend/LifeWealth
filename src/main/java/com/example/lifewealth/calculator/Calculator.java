@@ -8,4 +8,8 @@ public class Calculator {
     public int getCompoundResult() {
         return 0;
     }
+
+    public void applyYears(int years) {
+
+    }
 }
