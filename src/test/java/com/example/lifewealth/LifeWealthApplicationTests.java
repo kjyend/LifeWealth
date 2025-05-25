@@ -16,14 +16,14 @@ class LifeWealthApplicationTests {
     @Test
     void calculateCompoundInterest_input_0_return_0(){
         Calculator calculator = new Calculator();
-        calculator.calculateCompoundInterest(0);
+        calculator.applyPrincipal(0);
         assertEquals(calculator.getCompoundResult(),0);
     }
 
     @Test
     void calculateCompoundInterest_input_principal_0_year_0_return_0(){
         Calculator calculator = new Calculator();
-        calculator.calculateCompoundInterest(0);
+        calculator.applyPrincipal(0);
         calculator.applyYears(0);
         assertEquals(calculator.getCompoundResult(),0);
     }
@@ -31,7 +31,7 @@ class LifeWealthApplicationTests {
     @Test
     void calculateCompoundInterest_input_principal_0_year_0_interestRate_0_return_0(){
         Calculator calculator = new Calculator();
-        calculator.calculateCompoundInterest(0);
+        calculator.applyPrincipal(0);
         calculator.applyYears(0);
         calculator.applyInterestRate(0);
         assertEquals(calculator.getCompoundResult(),0);
@@ -40,7 +40,7 @@ class LifeWealthApplicationTests {
     @Test
     void calculateCompoundInterest_input_principal_1000_year_0_interestRate_0_return_1000(){
         Calculator calculator = new Calculator();
-        calculator.calculateCompoundInterest(1000);
+        calculator.applyPrincipal(1000);
         calculator.applyYears(0);
         calculator.applyInterestRate(0);
         assertEquals(calculator.getCompoundResult(),1000);
