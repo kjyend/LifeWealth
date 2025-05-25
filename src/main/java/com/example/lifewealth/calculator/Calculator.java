@@ -4,7 +4,7 @@ public class Calculator {
 
     private int principal;
 
-    public void calculateCompoundInterest(int principal) {
+    public void applyPrincipal(int principal) {
         this.principal=principal;
     }
 
