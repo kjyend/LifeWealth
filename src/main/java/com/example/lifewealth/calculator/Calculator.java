@@ -4,12 +4,16 @@ public class Calculator {
 
     private int principal;
     private int rate;
+    private int frequency;
 
     public void applyPrincipal(int principal) {
         this.principal=principal;
     }
 
     public int getCompoundResult() {
+        if(frequency==0){
+            return principal;
+        }
         return principal+principal*rate/100;
     }
 
@@ -22,6 +26,6 @@ public class Calculator {
     }
 
     public void applyFrequency(int frequency) {
-
+        this.frequency=frequency;
     }
 }
