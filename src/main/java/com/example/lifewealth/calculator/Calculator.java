@@ -19,4 +19,8 @@ public class Calculator {
     public void applyInterestRate(int rate) {
 
     }
+
+    public void applyFrequency(int frequency) {
+
+    }
 }
