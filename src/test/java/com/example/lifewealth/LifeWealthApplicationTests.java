@@ -96,4 +96,14 @@ class LifeWealthApplicationTests {
         calculator.applyFrequency(1);
         assertEquals(calculator.getCompoundResult(),1000);
     }
+
+    @Test
+    void calculateCompoundInterest_input_principal_100_year_0_frequency_1_interestRate_1_return_100(){
+        Calculator calculator = new Calculator();
+        calculator.applyPrincipal(100);
+        calculator.applyYears(0);
+        calculator.applyInterestRate(1);
+        calculator.applyFrequency(1);
+        assertEquals(calculator.getCompoundResult(),100);
+    }
 }
