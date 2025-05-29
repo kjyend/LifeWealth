@@ -14,7 +14,8 @@ public class Calculator {
     public int getCompoundResult() {
         if(frequency==0){
             return principal;
-        }else if(years==0){
+        }
+        if(years==0){
             return 1000;
         }
         return principal+principal*rate/100;
