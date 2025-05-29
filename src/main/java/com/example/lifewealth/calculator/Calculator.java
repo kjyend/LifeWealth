@@ -16,7 +16,7 @@ public class Calculator {
             return principal;
         }
         if(years==0){
-            return 1000;
+            return principal;
         }
         return principal+principal*rate/100;
     }
